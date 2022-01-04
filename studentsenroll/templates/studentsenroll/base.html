@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD </title>
+    <link rel="stylesheet" href="{% static 'studentsenroll/css/bootstrap.css' %}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+      .base{
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Playball', cursive;
+        /* background-color:rgb(255,175,175); */
+        background-color: rgb(255,119,119);
+
+      }
+      .showstyle{
+ 
+        font-family: 'Playfair Display', serif;
+        background-color: rgb(245,198,165);
+
+      }
+      
+    </style>
+    
+</head>
+<body>
+    <div class="container" mt-7>
+      <h3 class="text-center alert alert-info base">CRUD Project in Django(Function Based View with Model Form) </h3>
+      {% block content %} {% endblock %}
+
+    </div>
+
+
+    <script src="{% static 'studentsenroll/js/jquery.js' %}"></script>
+    <script src="{% static 'studentsenroll/js/popper.js' %}"></script>
+    <script src="{% static 'studentsenroll/js/bootstrap.js' %}"></script>
+</body>
+</html>
